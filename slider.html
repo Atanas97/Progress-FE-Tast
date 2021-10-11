@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="range-native" style="--step:10; --min:0; --max:100" aria-label="slider component">
+        <input id="slider-design" type="range" min="0" max="100" step="10" aria="slider" value="30">
+    </div>
+
+    <template id="contact-card-template">
+        <link rel="stylesheet" href="slider.css">
+        <div class="range-wrap">
+            <input type="range" class="range" id="range-slider">
+            <output class="bubble"></output>
+            <p class="log-el"></p>
+        </div>
+    </template>
+
+    <slider-component min="10" max="50" step="10" value="10"></slider-component>
+    <slider-component min="0" max="50" step="10" value="50"></slider-component>
+    <slider-component min="10" max="1000" step="5" value="10"></slider-component>
+    <script type="text/javascript" src="/slider.js"></script>
+</body>
+
+</html>
